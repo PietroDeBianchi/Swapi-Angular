@@ -61,6 +61,7 @@ header {
 .list-group-item {
     background-color: #4b4747; /* Darker gray background for list items */
     color: #ffffff; /* White text for list items */
+    font-size: 12px;
 }
   
 .list-group-item:hover {
@@ -71,7 +72,7 @@ header {
     text-decoration: none;
     color: white;
     &:hover {
-        color: rgb(235, 214, 26); /* Yellow text color on hover */
+        color: rgb(238, 215, 10); /* Yellow text color on hover */
     }
 }
 
