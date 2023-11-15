@@ -1,0 +1,57 @@
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="d-flex justify-content-between aling-items-center w-100 px-3">
+                <div>
+                    <h2 class="navbar-brand">STAR WARS</h2>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="linkContainer" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Choose a Planet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Laser-Swords</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enjoy the Empire</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container w-100">
+            <div class="d-flex flex-wrap justify-content-between align-item-center">
+                <div class="card" *ngFor="let character of peopleList">
+                    <img class="card-img-top" alt="..." src="https://www.macitynet.it/wp-content/uploads/2015/12/Star-Wars.jpg">
+                    <div class="Mycard-body">
+                      <h5 class="card-title"> {{ character.name }} </h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush h-100">
+                        <li class="list-group-item" >Homeworld : <a href="{{ character.homeworld }}" class="listLink">{{ character.homeworld }}</a></li>
+                        <ng-template #noStarships>
+                            <li class="list-group-item h-100">
+                                <p class="">No Starship available</p>
+                            </li>
+                        </ng-template>
+                        <ng-container *ngIf="character.starships.length > 0; else noStarships">
+                            <li class="list-group-item h-100">
+                                Starships:
+                                <a *ngFor="let starship of character.starships" [href]="starship" class="d-block listLink">{{ starship }}</a>
+                            </li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </div>
+            <div class="btnContainer d-flex justify-content-center mt-3">
+                <button (click)="nextPage()" class="pageBtn">Next Page</button>
+                <button (click)="previousPage()" class="pageBtn">Previous Page</button>
+            </div>
+        </div>
+    </main>    

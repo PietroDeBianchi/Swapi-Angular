@@ -1,0 +1,101 @@
+/* Custom Star Wars General Styles */
+main {
+    padding-top: 5rem;
+}
+
+/* Custom Star Wars Header Styles */
+header {
+    background-color: #212121; /* Dark background color */
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+}
+  
+.navbar-brand {
+    font-size: 1.8em; /* Increase font size for the brand */
+    color: #ffc107;
+    margin: 0;
+}
+  
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Add some spacing between nav items */
+}
+  
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text color for nav links */
+}
+  
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+  
+
+/* Custom Star Wars Main Styles */
+.card {
+    width: 12.8rem;
+    margin: 12px 8px;
+    border: 1px solid #ffee58; /* Yellow border */
+    background-color: #424242; /* Dark gray background */
+    color: #ffffff; /* White text */
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+  
+.Mycard-body {
+    border-bottom: 1px solid #ffee58; /* Yellow border at the bottom of the card body */
+    max-height: 240px;
+    padding: 4px;
+}
+  
+.card-img-top {
+    border-bottom: 1px solid #ffee58; /* Yellow border at the bottom of the image */
+}
+  
+.list-group-item {
+    background-color: #616161; /* Darker gray background for list items */
+    color: #ffffff; /* White text for list items */
+}
+  
+.list-group-item:hover {
+    background-color: #757575; /* Darker gray background on hover */
+}
+
+.listLink {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: rgb(235, 214, 26); /* Yellow text color on hover */
+    }
+}
+
+.btnContainer {
+    width: 100%;
+    gap: 32px;
+}
+
+/* star-wars-theme.css */
+
+.pageBtn {
+    background-color: #000;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pageBtn:hover {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  
