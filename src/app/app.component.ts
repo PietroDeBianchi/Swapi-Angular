@@ -7,11 +7,11 @@ import { RouterLink } from '@angular/router';
 import {RestapiComponent} from './restapi/restapi.component';
 import { PlanetapiComponent } from './childComponents/planetapi/planetapi.component';
 import { StarshipapiComponent } from './childComponents/starshipapi/starshipapi.component';
-
+import { EmpireapiComponent } from './childComponents/empireapi/empireapi.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HttpClientModule, RouterOutlet, RouterLink, RestapiComponent, PlanetapiComponent, StarshipapiComponent],
+  imports: [CommonModule, RouterOutlet, HttpClientModule, RouterOutlet, RouterLink, RestapiComponent, PlanetapiComponent, StarshipapiComponent, EmpireapiComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
