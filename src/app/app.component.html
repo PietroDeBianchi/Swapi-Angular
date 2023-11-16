@@ -1,1 +1,25 @@
-<app-restapi></app-restapi>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="d-flex justify-content-between aling-item-center w-100 px-3">
+            <div>
+                <h2 class="navbar-brand"><a routerLink="/" >STAR WARS</a></h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/app-planetapi" routerLinkActive="activebutton"
+                    >Choose a Planet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/app-starshipapi">Custom Starship</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Enjoy the Empire</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<router-outlet></router-outlet>

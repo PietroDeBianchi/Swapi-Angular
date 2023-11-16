@@ -1,0 +1,22 @@
+<main>
+    <div class="container w-100">
+        <div class="d-flex flex-wrap justify-content-between align-item-center">
+            <div class="card" *ngFor="let starship of starshipsList">
+                <img class="card-img-top" alt="..." src="https://www.macitynet.it/wp-content/uploads/2015/12/Star-Wars.jpg">
+                <div class="Mycard-body">
+                  <h5 class="card-title"> {{ starship.name }} </h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush h-100">
+                    <li class="list-group-item" >Vehicle Class : {{ starship.vehicle_class }}</li>
+                    <li class="list-group-item" >Model : {{ starship.model }}</li>
+                    <li class="list-group-item h-100" >Manufacturer : {{ starship.manufacturer }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="btnContainer d-flex justify-content-center my-3">
+            <button (click)="previousPage()" class="pageBtn">Prev Page</button>
+            <button (click)="nextPage()" class="pageBtn">Next Page</button>
+        </div>
+    </div>
+</main>

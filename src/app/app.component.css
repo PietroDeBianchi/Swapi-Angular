@@ -1,0 +1,41 @@
+/* Custom Star Wars General Styles */
+main {
+    padding-top: 5rem;
+}
+
+/* Custom Star Wars Header Styles */
+header {
+    background-color: #212121; /* Dark background color */
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}  
+
+.navbar-brand {
+    margin: 0;
+}
+  
+.navbar-brand a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 1.8em; /* Increase font size for the brand */
+    margin: 0;
+    &:hover {
+        color: #ffffff;
+    }
+}
+  
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Add some spacing between nav items */
+}
+  
+.navbar-nav .nav-link {
+    color: #ffc107;
+}
+  
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* White text color for nav links */
+    text-decoration: underline;
+}
+

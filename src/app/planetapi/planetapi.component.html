@@ -1,0 +1,22 @@
+<main>
+    <div class="container w-100">
+        <div class="d-flex flex-wrap justify-content-between align-item-center">
+            <div class="card" *ngFor="let planet of planetList">
+                <img class="card-img-top" alt="..." src="https://www.macitynet.it/wp-content/uploads/2015/12/Star-Wars.jpg">
+                <div class="Mycard-body">
+                  <h5 class="card-title"> {{ planet.name }} </h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush h-100">
+                    <li class="list-group-item" >Gravity : {{ planet.gravity }}</li>
+                    <li class="list-group-item" >Climate : {{ planet.climate }}</li>
+                    <li class="list-group-item h-100" >Terrain : {{ planet.terrain }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="btnContainer d-flex justify-content-center my-3">
+            <button (click)="previousPage()" class="pageBtn">Prev Page</button>
+            <button (click)="nextPage()" class="pageBtn">Next Page</button>
+        </div>
+    </div>
+</main> 
