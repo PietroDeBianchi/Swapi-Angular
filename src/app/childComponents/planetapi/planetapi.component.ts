@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './planetapi.component.html',
-  styleUrl: '../restapi/restapi.component.css'
+  styleUrl: '../../restapi/restapi.component.css'
 })
 export class PlanetapiComponent implements OnInit {
   

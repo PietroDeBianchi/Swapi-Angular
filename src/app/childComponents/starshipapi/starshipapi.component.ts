@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './starshipapi.component.html',
-  styleUrl: '../restapi/restapi.component.css'
+  styleUrl: '../../restapi/restapi.component.css'
 })
 export class StarshipapiComponent implements OnInit {
 
